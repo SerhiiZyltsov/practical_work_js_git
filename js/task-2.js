@@ -51,6 +51,41 @@ for (let i = 0; i < 2; i++) {
 
 }
 
+// let count = 0;
+
+//while ================================
+
+// while (count < 2) {
+//     const a = prompt('Один из последних просмотренных фильмов?', ''),
+//         b = prompt('На сколько оцените его?', '');
+//     count++;
+//     if (a != '' && b != '' && a != null && b != null && a.length < 50) {
+//         personalMovieDB.movies[a] = b;
+//         console.log('done');
+
+//     } else {
+//         console.log('error');
+//         i--;
+//     }
+
+// }
+
+//do while =======================================
+
+// do {
+//     const a = prompt('Один из последних просмотренных фильмов?', ''),
+//         b = prompt('На сколько оцените его?', '');
+//     count++;
+//     if (a != '' && b != '' && a != null && b != null && a.length < 50) {
+//         personalMovieDB.movies[a] = b;
+//         console.log('done');
+
+//     } else {
+//         console.log('error');
+//         i--;
+//     }
+// } while (count < 2);
+
 
 if (personalMovieDB.count <= 10) {
     console.log("Просмотрено довольно мало фильмов")

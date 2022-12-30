@@ -48,7 +48,7 @@
                         </p>
 
                         <h3 class="work__subtitle">
-                            Код задания
+                            Код задания 1
                         </h3>
                         <div class="work_code">
                             const numberOfFilms = +prompt('Сколько фильмов вы уже посмотрели?', ''); <br>
@@ -71,6 +71,74 @@
                             personalMovieDB.movies[c] = d;<br>
                             <br>
                             console.log(personalMovieDB);
+                        </div>
+                    </div>
+
+                </section>
+
+                <section class="work">
+                    <div class="container">
+                        <h2 class="work__title">
+                            Задание 1
+                        </h2>
+                        <p class="work__descr">
+                            1) Автоматизировать вопросы пользователю про фильмы при помощи цикла
+                        </p>
+                        <p class="work__descr">
+                            2) Сделать так, чтобы пользователь не мог оставить ответ в виде пустой строки,
+                            отменить ответ или ввести название фильма длинее, чем 50 символов. Если это происходит -
+                            возвращаем пользователя к вопросам опять
+                        </p>
+                        <p class="work__descr">
+                            3) При помощи условий проверить personalMovieDB.count, и если он меньше 10 - вывести
+                            сообщение
+                            "Просмотрено довольно мало фильмов", если от 10 до 30 - "Вы классический зритель", а если
+                            больше -
+                            "Вы киноман". А если не подошло ни к одному варианту - "Произошла ошибка"
+
+                        </p>
+                        <p class="work__descr">
+                            4) Потренироваться и переписать цикл еще двумя способами*/
+                        </p>
+                        <h3 class="work__subtitle">
+                            Код задания 2
+                        </h3>
+                        <div class="work_code">
+                            const a = prompt('Один из последних просмотренных фильмов?', ''), <br>
+                            b = prompt('На сколько оцените его?', ''),<br>
+                            c = prompt('Один из последних просмотренных фильмов?', ''),<br>
+                            d = prompt('На сколько оцените его?', '');<br>
+                            <br>
+                            personalMovieDB.movies[a] = b;<br>
+                            personalMovieDB.movies[c] = d;<br>
+                            <br>
+                            for (let i = 0; i < 2; i++) {<br>
+                                <br>
+                                const a = prompt('Один из последних просмотренных фильмов?', ''),<br>
+                                b = prompt('На сколько оцените его?', '');<br>
+                                <br>
+                                if (a != '' && b != '' && a != null && b != null && a.length < 50) {<br>
+                                    personalMovieDB.movies[a] = b;<br>
+                                    console.log('done');<br>
+                                    <br>
+                                    } else {<br>
+                                    console.log('error');<br>
+                                    i--;<br>
+                                    }<br>
+                                    <br>
+                                    }<br>
+                                    <br>
+                                    if (personalMovieDB.count <= 10) {<br>
+                                        console.log("Просмотрено довольно мало фильмов")<br>
+                                        } else if (personalMovieDB.count > 10 && personalMovieDB.count <= 30) {<br>
+                                            console.log("Вы классический зритель")<br>
+                                            } else if (personalMovieDB.count > 30) {<br>
+                                            console.log("Вы киноман")<br>
+                                            } else {<br>
+                                            console.log("Вы киноман")<br>
+                                            }<br>
+                                            <br>
+                                            console.log(personalMovieDB);<br>
                         </div>
                     </div>
 
